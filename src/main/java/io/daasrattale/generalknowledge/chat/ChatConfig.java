@@ -15,7 +15,6 @@ public class ChatConfig {
     public ChatClient chatClient() {
         return new OllamaChatClient(new OllamaApi())
                 .withDefaultOptions(OllamaOptions.create()
-                        .withModel(OllamaOptions.DEFAULT_MODEL)
                         .withTemperature(0.9f));
     }
 }

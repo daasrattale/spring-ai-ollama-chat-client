@@ -21,6 +21,8 @@ public class ChatController {
 
     @GetMapping
     public Mono<ResponseEntity<String>> generate(@RequestParam(defaultValue = "Tell me to add a proper prompt in a funny way") String prompt) {
+
+
         return Mono.just(
                 ResponseEntity.ok(chatClient.call(prompt))
         );

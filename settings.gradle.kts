@@ -1,1 +1,1 @@
-rootProject.name = "general-knowledge"
+rootProject.name = "spring-ai-ollama-chat-client"
